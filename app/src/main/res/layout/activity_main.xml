@@ -9,10 +9,18 @@
     tools:context="com.leo.dagger2demo.ui.activity.main.MainActivity">
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/b_student"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="student"/>
+        android:text="Student"/>
+
+    <Button
+        android:text="Adapter"
+        android:id="@+id/b_adapter"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
 
