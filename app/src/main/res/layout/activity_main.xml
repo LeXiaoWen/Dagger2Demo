@@ -9,19 +9,22 @@
     tools:context="com.leo.dagger2demo.ui.activity.main.MainActivity">
 
     <Button
-        android:textAllCaps="false"
-        android:id="@+id/b_student"
+        android:id="@+id/b_net"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Student"/>
+        android:text="网络请求"
+        android:textAllCaps="false"/>
 
-    <Button
-        android:text="Adapter"
-        android:id="@+id/b_adapter"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+    <TextView
+        android:id="@+id/tv_home"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#ff77"
+        android:textSize="14sp"/>
 
 
 </LinearLayout>
