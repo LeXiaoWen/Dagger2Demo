@@ -40,6 +40,7 @@ public class TestActivity extends BaseActivity<TestActivityPresenter> {
     @OnClick(R.id.b_net)
     public void onViewClicked() {
         showDialog();
+        //模拟网络请求
         new Thread(() -> {
             try {
                 Thread.sleep(2000);

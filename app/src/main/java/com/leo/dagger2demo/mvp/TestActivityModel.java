@@ -23,8 +23,8 @@ public class TestActivityModel extends BaseModel<TestActivityPresenter> {
     }
 
     public void parseData(List<TestData> list) {
-        // TODO: 2018/3/15 处理完数据返回给Presenter层
 
+        // 处理完数据返回给Presenter层
         for (TestData testData : list) {
             String type = testData.getType();
             TestData.Data data = testData.getData();
@@ -32,8 +32,8 @@ public class TestActivityModel extends BaseModel<TestActivityPresenter> {
                 mPresenter.onBannerData(data);
             } else if (type.equals(home)) {
                 mPresenter.onHomeData(data);
-            }else {
-                // TODO: 2018/3/15 其他。。。
+            } else {
+                // 其他。。。
             }
         }
 

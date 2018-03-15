@@ -1,7 +1,5 @@
 package com.leo.dagger2demo.mvp;
 
-import android.util.Log;
-
 import com.leo.dagger2demo.mvp.base.BasePresenter;
 import com.leo.dagger2demo.mvp.bean.TestData;
 
@@ -24,7 +22,7 @@ public class TestActivityPresenter extends BasePresenter<TestActivity, TestActiv
 
 
     public void doNetWorking() {
-        // TODO: 2018/3/15 模拟网络请求 start
+        // 模拟网络请求返回的数据
         List<TestData> list = new ArrayList<>();
 
         TestData testData1 = new TestData();
@@ -49,13 +47,10 @@ public class TestActivityPresenter extends BasePresenter<TestActivity, TestActiv
 
         list.add(testData1);
         list.add(testData2);
-        // TODO: 2018/3/15  模拟网络请求 end
 
-        // TODO: 2018/3/15 在model层处理数据 start
-
+        //处理数据
         mModel.parseData(list);
 
-        // TODO: 2018/3/15 在model层处理数据 end
 
     }
 
